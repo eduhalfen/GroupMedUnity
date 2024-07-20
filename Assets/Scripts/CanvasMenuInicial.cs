@@ -86,7 +86,7 @@ public class CanvasMenuInicial : MonoBehaviour
             timer += Time.deltaTime;
             if (timer >= 40.0f)
             {
-                PressionaButtonScreenSaver();
+                //PressionaButtonScreenSaver();
             }
         }
         
@@ -94,24 +94,6 @@ public class CanvasMenuInicial : MonoBehaviour
 
 
 
-    public void PressionaButtonLocalizacao()
-    {
-        SceneManager.UnloadSceneAsync("MenuInicial");
-        SceneManager.LoadSceneAsync("Localizacao");
-    }
-
-
-    public void PressionaButtonBairroNovaCaxias()
-    {
-        SceneManager.UnloadSceneAsync("MenuInicial");
-        SceneManager.LoadSceneAsync("BairroNovaCaxias");
-    }
-
-    public void PressionaButtonNovaCaxiasFun()
-    {
-        SceneManager.UnloadSceneAsync("MenuInicial");
-        SceneManager.LoadSceneAsync("NovaCaxiasFun");
-    }
 
     public void PressionaButtonScreenSaver()
     {
