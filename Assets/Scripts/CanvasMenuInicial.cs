@@ -25,7 +25,8 @@ public class CanvasMenuInicial : MonoBehaviour
 
     bool isScreenSaver = false;
 
-
+    public Animator animatorTelas;
+    public AudioSource audioSourceTransition;
 
 
 
@@ -92,8 +93,80 @@ public class CanvasMenuInicial : MonoBehaviour
         
     }
 
+    //--------------------------------------------------------------
+    public void PressionaButtonCapacitacao()
+    {
+        animatorTelas.SetBool("EntraCapacitacao", true);
+        audioSourceTransition.Play();
+    }
 
+    public void PressionaButtonVoltarCapacitacao()
+    {
+        animatorTelas.SetBool("EntraCapacitacao", false);
+        audioSourceTransition.Play();
+    }
 
+    public void PressionaButtonSuporte()
+    {
+        animatorTelas.SetBool("EntraSuporte", true);
+        audioSourceTransition.Play();
+    }
+
+    public void PressionaButtonVoltarSuporte()
+    {
+        animatorTelas.SetBool("EntraSuporte", false);
+        audioSourceTransition.Play();
+    }
+
+    public void PressionaButtonPrevencao()
+    {
+        animatorTelas.SetBool("EntraPrevencao", true);
+        audioSourceTransition.Play();
+    }
+
+    public void PressionaButtonVoltarPrevencao()
+    {
+        animatorTelas.SetBool("EntraPrevencao", false);
+        audioSourceTransition.Play();
+    }
+
+    public void PressionaButtonTecnologia()
+    {
+        animatorTelas.SetBool("EntraTecnologia", true);
+        audioSourceTransition.Play();
+    }
+
+    public void PressionaButtonVoltarTecnologia()
+    {
+        animatorTelas.SetBool("EntraTecnologia", false);
+        audioSourceTransition.Play();
+    }
+
+    public void PressionaButtonLideres()
+    {
+        animatorTelas.SetBool("EntraLideres", true);
+        audioSourceTransition.Play();
+    }
+
+    public void PressionaButtonVoltarLideres()
+    {
+        animatorTelas.SetBool("EntraLideres", false);
+        audioSourceTransition.Play();
+    }
+
+    public void PressionaButtonESG()
+    {
+        animatorTelas.SetBool("EntraESG", true);
+        audioSourceTransition.Play();
+    }
+
+    public void PressionaButtonVoltarESG()
+    {
+        animatorTelas.SetBool("EntraESG", false);
+        audioSourceTransition.Play();
+    }
+
+    //-----------------------------------------------------------------
 
     public void PressionaButtonScreenSaver()
     {
