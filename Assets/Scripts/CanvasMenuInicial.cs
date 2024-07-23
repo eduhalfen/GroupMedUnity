@@ -25,7 +25,7 @@ public class CanvasMenuInicial : MonoBehaviour
 
     bool isScreenSaver = false;
 
-    public Animator animatorTelas;
+    public Animator animatorTelas, animatorLED;
     public AudioSource audioSourceTransition;
 
 
@@ -81,7 +81,8 @@ public class CanvasMenuInicial : MonoBehaviour
             contadorEmergencia = 0;
             timerEmergencia = 0.0f;
         }
-        
+
+        /*
         if(isScreenSaver == false)
         {
             timer += Time.deltaTime;
@@ -90,7 +91,7 @@ public class CanvasMenuInicial : MonoBehaviour
                 //PressionaButtonScreenSaver();
             }
         }
-        
+        */
     }
 
     //--------------------------------------------------------------
@@ -145,24 +146,28 @@ public class CanvasMenuInicial : MonoBehaviour
     public void PressionaButtonLideres()
     {
         animatorTelas.SetBool("EntraLideres", true);
+        animatorLED.SetBool("EntraLideres", true);
         audioSourceTransition.Play();
     }
 
     public void PressionaButtonVoltarLideres()
     {
         animatorTelas.SetBool("EntraLideres", false);
+        animatorLED.SetBool("EntraLideres", false);
         audioSourceTransition.Play();
     }
 
     public void PressionaButtonESG()
     {
         animatorTelas.SetBool("EntraESG", true);
+        animatorLED.SetBool("EntraESG", true);
         audioSourceTransition.Play();
     }
 
     public void PressionaButtonVoltarESG()
     {
         animatorTelas.SetBool("EntraESG", false);
+        animatorLED.SetBool("EntraESG", false);
         audioSourceTransition.Play();
     }
 
