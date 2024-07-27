@@ -213,10 +213,18 @@ public class CanvasMenuInicial : MonoBehaviour
     {
         animatorTelas.SetBool("EntraPrevencao", false);
         animatorLED.SetBool("EntraPrevencao", false);
+        animatorLED.SetBool("EntraPrevencaoInterno", false);
         AudioSaitela();
         StartCoroutine(EntraTextoTelaPrincipal());
     }
 
+    public void PressionaPrevencaoInterno()
+    {
+        animatorLED.SetBool("EntraPrevencaoInterno", true);
+        AudioSegundaTela();
+    }
+
+    //--------------------------------------------------------------
     public void PressionaButtonTecnologia()
     {
         animatorTelas.SetBool("EntraTecnologia", true);
