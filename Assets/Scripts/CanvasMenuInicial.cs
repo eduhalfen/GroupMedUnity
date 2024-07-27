@@ -224,7 +224,33 @@ public class CanvasMenuInicial : MonoBehaviour
         AudioSegundaTela();
     }
 
+
     //--------------------------------------------------------------
+    public void PressionaButtonLideres()
+    {
+        animatorTelas.SetBool("EntraLideres", true);
+        animatorLED.SetBool("EntraLideres", true);
+        AudioEntraTela();
+    }
+
+    public void PressionaButtonVoltarLideres()
+    {
+        animatorTelas.SetBool("EntraLideres", false);
+        animatorLED.SetBool("EntraLideres", false);
+        animatorLED.SetBool("EntraLideresInterno", false);
+        AudioSaitela();
+        StartCoroutine(EntraTextoTelaPrincipal());
+    }
+
+    public void PressionaLideresInterno()
+    {
+        animatorLED.SetBool("EntraLideresInterno", true);
+        AudioSegundaTela();
+    }
+
+    //--------------------------------------------------------------
+
+
     public void PressionaButtonTecnologia()
     {
         animatorTelas.SetBool("EntraTecnologia", true);
@@ -240,21 +266,9 @@ public class CanvasMenuInicial : MonoBehaviour
         StartCoroutine( EntraTextoTelaPrincipal());
     }
 
-    public void PressionaButtonLideres()
-    {
-        animatorTelas.SetBool("EntraLideres", true);
-        animatorLED.SetBool("EntraLideres", true);
-        AudioEntraTela();
-    }
 
-    public void PressionaButtonVoltarLideres()
-    {
-        animatorTelas.SetBool("EntraLideres", false);
-        animatorLED.SetBool("EntraLideres", false);
-        AudioSaitela();
-        StartCoroutine(EntraTextoTelaPrincipal());
-    }
 
+    //--------------------------------------------------------------
     public void PressionaButtonESG()
     {
         animatorTelas.SetBool("EntraESG", true);
