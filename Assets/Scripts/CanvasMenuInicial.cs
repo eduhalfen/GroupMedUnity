@@ -250,6 +250,40 @@ public class CanvasMenuInicial : MonoBehaviour
 
     //--------------------------------------------------------------
 
+    public void PressionaButtonESG()
+    {
+        animatorTelas.SetBool("EntraESG", true);
+        animatorLED.SetBool("EntraESG", true);
+        AudioEntraTela();
+    }
+
+    public void PressionaButtonVoltarESG()
+    {
+        animatorTelas.SetBool("EntraESG", false);
+        animatorLED.SetBool("EntraESG", false);
+        animatorLED.SetBool("EntraESGInterno", false);
+        animatorLED.SetBool("EntraISOInterno", false);
+        AudioSaitela();
+        StartCoroutine(EntraTextoTelaPrincipal());
+    }
+
+
+    public void PressionaESGInterno()
+    {
+        animatorLED.SetBool("EntraESGInterno", true);
+        animatorLED.SetBool("EntraISOInterno", false);
+        AudioSegundaTela();
+    }
+
+    public void PressionaISOInterno()
+    {
+        animatorLED.SetBool("EntraESGInterno", false);
+        animatorLED.SetBool("EntraISOInterno", true);
+        AudioSegundaTela();
+    }
+
+
+    //-----------------------------------------------------------------
 
     public void PressionaButtonTecnologia()
     {
@@ -269,22 +303,7 @@ public class CanvasMenuInicial : MonoBehaviour
 
 
     //--------------------------------------------------------------
-    public void PressionaButtonESG()
-    {
-        animatorTelas.SetBool("EntraESG", true);
-        animatorLED.SetBool("EntraESG", true);
-        AudioEntraTela();
-    }
 
-    public void PressionaButtonVoltarESG()
-    {
-        animatorTelas.SetBool("EntraESG", false);
-        animatorLED.SetBool("EntraESG", false);
-        AudioSaitela();
-        StartCoroutine(EntraTextoTelaPrincipal());
-    }
-
-    //-----------------------------------------------------------------
 
     public void PressionaButtonScreenSaver()
     {
