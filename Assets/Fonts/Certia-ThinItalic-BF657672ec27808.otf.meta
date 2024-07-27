@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: 2cc1c2151fbac4da084ca62f6b0528e0
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Certia
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 318fee1416d6a4e6e910dad04820d1fa, type: 3}
+  - {fileID: 12800000, guid: d7dfc98b4dd3b443b936753954bdf3b2, type: 3}
+  - {fileID: 12800000, guid: 3936fd4bde5e24cdf9b6d47fb8a18fd4, type: 3}
+  - {fileID: 12800000, guid: 0284e687991f74162b9f2c4b71874637, type: 3}
+  - {fileID: 12800000, guid: c62355b11cc0948f09423d0ee9101b38, type: 3}
+  - {fileID: 12800000, guid: d91a287453c754be59abe2f66f366e37, type: 3}
+  - {fileID: 12800000, guid: 7a53b2dfd777c4553b9089aa754f003d, type: 3}
+  - {fileID: 12800000, guid: 478f47551255746f49662e393c8960af, type: 3}
+  - {fileID: 12800000, guid: f1623d8f8b5244120b8216c51c3b03f0, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
