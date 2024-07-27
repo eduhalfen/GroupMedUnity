@@ -296,10 +296,51 @@ public class CanvasMenuInicial : MonoBehaviour
     {
         animatorTelas.SetBool("EntraTecnologia", false);
         animatorLED.SetBool("EntraTecnologia", false);
+
+        animatorLED.SetBool("EntraAMUInterno", false);
+        animatorLED.SetBool("EntraSGIInterno", false);
+        animatorLED.SetBool("EntraFrotaInterno", false);
+        animatorLED.SetBool("EntraGestaoInterno", false);
+
         AudioSaitela();
         StartCoroutine( EntraTextoTelaPrincipal());
     }
 
+    public void PressionaAMUInterno()
+    {
+        animatorLED.SetBool("EntraAMUInterno", true);
+        animatorLED.SetBool("EntraSGIInterno", false);
+        animatorLED.SetBool("EntraFrotaInterno", false);
+        animatorLED.SetBool("EntraGestaoInterno", false);
+        AudioSegundaTela();
+    }
+
+    public void PressionaSGIInterno()
+    {
+        animatorLED.SetBool("EntraAMUInterno", false);
+        animatorLED.SetBool("EntraSGIInterno", true);
+        animatorLED.SetBool("EntraFrotaInterno", false);
+        animatorLED.SetBool("EntraGestaoInterno", false);
+        AudioSegundaTela();
+    }
+
+    public void PressionaFrotaInterno()
+    {
+        animatorLED.SetBool("EntraAMUInterno", false);
+        animatorLED.SetBool("EntraSGIInterno", false);
+        animatorLED.SetBool("EntraFrotaInterno", true);
+        animatorLED.SetBool("EntraGestaoInterno", false);
+        AudioSegundaTela();
+    }
+
+    public void PressionaGestaoInterno()
+    {
+        animatorLED.SetBool("EntraAMUInterno", false);
+        animatorLED.SetBool("EntraSGIInterno", false);
+        animatorLED.SetBool("EntraFrotaInterno", false);
+        animatorLED.SetBool("EntraGestaoInterno", true);
+        AudioSegundaTela();
+    }
 
 
     //--------------------------------------------------------------
