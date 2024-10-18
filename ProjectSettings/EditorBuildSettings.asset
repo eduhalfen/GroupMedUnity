@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/MenuInicial.unity
+  - enabled: 0
+    path: Assets/Scenes/MenuInicial_ComDeformacao.unity
     guid: f6e3ed56efcd3409ea037a0908146841
+  - enabled: 1
+    path: Assets/Scenes/MenuInicial_SemDeformacao.unity
+    guid: 287e91e58e4fb426a9ff4e9cd6b26a22
   m_configObjects: {}
